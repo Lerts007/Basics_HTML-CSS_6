@@ -1,0 +1,28 @@
+/*SECTION1*/
+.section1-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.section1-content__img{
+  margin-top: 15px;
+}
+.section1-groupText{
+  height: 92px;
+  margin-right: 105px;
+  margin-bottom: 98px;
+  padding-top: 17px;
+  padding-left: 16px;
+  border-left: 12px solid $accentColor;
+}
+.section1-groupText h1{
+  @include Lato90048;
+  max-width: 377px;
+  line-height: 70%;
+}
+.section1-groupText__mini{
+  @include Lato70032
+}
+.section1-groupText__red{
+  color: $accentColor;
+}
