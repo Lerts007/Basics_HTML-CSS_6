@@ -50,6 +50,7 @@
 
 .product__img {
   height: 350px;
+  margin-bottom: 25px;
   object-fit: contain;
 }
 
@@ -91,3 +92,8 @@
 
 }
 
+@media (max-width: 768px){
+  .product{
+    max-width: 100%;
+  }
+}

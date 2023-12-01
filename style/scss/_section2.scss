@@ -55,3 +55,15 @@ background-color: rgba(33, 22, 22, 0.70);
   @include Lato70024;
   color: $accentColor;
 }
+
+@media (max-width: 768px){
+  .section2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section2-block{
+    width: 100%;
+  }
+}

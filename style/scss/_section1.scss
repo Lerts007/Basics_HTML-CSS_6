@@ -1,4 +1,7 @@
 /*SECTION1*/
+.section1{
+  background-color: #F1E4E6;
+}
 .section1-content{
   display: flex;
   align-items: center;
@@ -33,5 +36,17 @@
   .section1-groupText{
     margin-right: 0;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px){
+  .section1{
+    height: 363px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section1-content__img{
+    display: none;
   }
 }

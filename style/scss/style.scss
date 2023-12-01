@@ -40,3 +40,12 @@
     padding-right: 16px;
   }
 }
+
+@media (max-width: 768px){
+  .lk{
+    display: none;
+  }
+  .cartShop{
+    display: none;
+  }
+}
