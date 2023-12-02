@@ -1,0 +1,184 @@
+/*FOOTER*/
+.footer{
+  background-color: $backgroundFooter;
+}
+.feature{
+  padding-top: 104px;
+  padding-bottom: 104px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+.feature-block{
+  max-width: 360px;
+  text-align: center;
+}
+
+.feature-block-img{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-block-text h4 {
+  margin-bottom: 16px;
+  @include Lato40020;
+  color: #FBFBFB;
+}
+.feature-block-text p {
+  @include Lato30014;
+  color: #FBFBFB;
+
+}
+
+.subscribe{
+  position: relative;
+  height: 550px;
+  padding-top: 97px;
+  padding-bottom: 156px;
+  background-image: url('../../img/footer/desktop.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.subscribe::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  }
+.subscribe-content{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+.subscribe-block-left{
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.subscribe-block-left p {
+  @include Lato40020;
+  margin-top: 30px
+}
+.subscribe-block-left p span{
+  @include LatoItalic40020;
+}
+.subscribe-block-right{
+  max-width: 360px;
+  text-align: center
+}
+.subscribe-block-right h4{
+  @include Lato70024;
+  margin-bottom: 15px;
+}
+.subscribe-block-right p{
+  @include Lato40018;
+  margin-bottom: 32px;
+}
+.subscribe-block-right-input__inputText{
+  width: 256px;
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 22px;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #E1E1E1;
+  @include Lato40014;
+}
+.subscribe-block-right-input__inputBtn{
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: $accentColor;
+  color: #FFF;
+  transition: background-color .4s, color .4s;
+}
+
+.subscribe-block-right-input__inputBtn:hover{
+  background-color: #FBFBFB;
+  color: $accentColor;
+  border: 2px solid $accentColor;
+}
+
+.copyright{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px
+}
+.copiright-left p{
+  @include Lato40016;
+  color: #FBFBFB
+}
+.copiright-right{
+  display: flex;
+  gap: 7px;
+}
+.copiright-block{
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+}
+.copiright-block__svg{
+  fill: black;
+}
+.copiright-block:hover path{
+  fill: white
+}
+.copiright-block:hover {
+  background-color: $accentColor;
+}
+// .copiright-block svg path:hover{
+//   color: white;
+//   fill: #FFF;
+// }
+
+@media (max-width: 768px){
+  .feature{
+    flex-direction: column;
+  }
+  .subscribe{
+    background-image: url('../../img/footer/tablet.png');
+  }
+  .subscribe-content{
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px){
+  .subscribe{
+    background-image: url('../../img/footer/mobile.png');
+  }
+  .subscribe-block-right-input__inputText{
+    width: 180px;
+  }
+  .copyright{
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 375px){
+  .subscribe-block-right-input__inputText{
+    width: 180px;
+  }
+}

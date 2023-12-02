@@ -3,6 +3,7 @@
 @import 'section1';
 @import 'section2';
 @import 'section3';
+@import 'footer';
 
 *{
   margin: 0;
@@ -27,11 +28,32 @@
 }
 .header-leftBlock{
   display: flex;
+  align-items: center;
   gap: 42px;
 }
+
+.header-leftBlock__search{
+  cursor: pointer;
+}
+.header-leftBlock__search path{
+  transition: fill .3s;
+}
+.header-leftBlock__search:hover path{
+  fill:$accentColor;
+}
+
 .header-rightBlock{
   display: flex;
-  gap: 33px
+  gap: 33px;
+}
+.header-rightBlock__icon{
+  cursor: pointer;
+}
+.header-rightBlock__icon path {
+  transition: fill .3s;
+}
+.header-rightBlock__icon:hover path{
+  fill: $accentColor;
 }
 
 @media (max-width: 1024px){
@@ -49,3 +71,4 @@
     display: none;
   }
 }
+
