@@ -58,10 +58,6 @@
   transition: opacity .4s;
 }
 
-.product:hover::before{
-  opacity: 1;
-}
-
 .product-img {
   width: 100%;
   height: 70%;
@@ -113,12 +109,28 @@
   color: $accentColor;
   transition: background-color .4s, color .4s;
 }
-.section3-content__btn:hover{
-  background-color: $accentColor;
-  color: #FFF
+.AddToCart{
+  opacity: 0;
+  border: none;
+  background-color: none;
+}
+
+
+@media (hover: hover){
+  
+  .product:hover::before{
+    opacity: 1;
+  }
+  .section3-content__btn:hover{
+    background-color: $accentColor;
+    color: #FFF
+  }
 }
 
 @media (max-width: 768px){
+  .AddToCart{
+    display: flex;
+  }
   .product{
     max-width: 100%;
   }

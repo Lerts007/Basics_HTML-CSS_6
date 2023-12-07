@@ -109,13 +109,6 @@
   color: #FFF;
   transition: background-color .4s, color .4s;
 }
-
-.subscribe-block-right-input__inputBtn:hover{
-  background-color: #FBFBFB;
-  color: $accentColor;
-  border: 2px solid $accentColor;
-}
-
 .copyright{
   padding-top: 24px;
   padding-bottom: 24px;
@@ -144,16 +137,21 @@
 .copiright-block__svg{
   fill: black;
 }
-.copiright-block:hover path{
-  fill: white
+
+
+@media(hover: hover){
+  .subscribe-block-right-input__inputBtn:hover{
+    background-color: #FBFBFB;
+    color: $accentColor;
+    border: 2px solid $accentColor;
+  }
+  .copiright-block:hover path{
+    fill: white
+  }
+  .copiright-block:hover {
+    background-color: $accentColor;
+  }
 }
-.copiright-block:hover {
-  background-color: $accentColor;
-}
-// .copiright-block svg path:hover{
-//   color: white;
-//   fill: #FFF;
-// }
 
 @media (max-width: 768px){
   .feature{
@@ -174,10 +172,21 @@
     width: 180px;
   }
   .copyright{
+    justify-content: center;
     flex-direction: column-reverse;
   }
 }
 @media (max-width: 375px){
+  .subscribe-block-left p {
+    @include Lato40018;
+    margin-top: 30px
+  }
+  .subscribe-block-left p span{
+    @include LatoItalic40018;
+  }
+  .subscribe-block-right p{
+    @include Lato40014;
+  }
   .subscribe-block-right-input__inputText{
     width: 180px;
   }

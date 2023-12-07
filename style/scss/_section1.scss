@@ -49,4 +49,18 @@
   .section1-content__img{
     display: none;
   }
+  .section1-groupText h1{
+    @include Lato90044;
+  }
+  .section1-groupText__mini{
+    @include Lato70024
+  }
+}
+@media (max-width: 375px){
+  .section1-groupText h1{
+    @include Lato90038;
+  }
+  .section1-groupText__mini{
+    @include Lato70020
+  }
 }

@@ -38,9 +38,7 @@
 .header-leftBlock__search path{
   transition: fill .3s;
 }
-.header-leftBlock__search:hover path{
-  fill:$accentColor;
-}
+
 
 .header-rightBlock{
   display: flex;
@@ -52,8 +50,15 @@
 .header-rightBlock__icon path {
   transition: fill .3s;
 }
-.header-rightBlock__icon:hover path{
-  fill: $accentColor;
+
+
+@media (hover: hover) {
+  .header-leftBlock__search:hover path{
+    fill:$accentColor;
+  }
+  .header-rightBlock__icon:hover path{
+    fill: $accentColor;
+  }
 }
 
 @media (max-width: 1024px){
